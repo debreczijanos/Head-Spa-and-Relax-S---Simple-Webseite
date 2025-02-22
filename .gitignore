@@ -1,0 +1,20 @@
+# Node.js-Abhängigkeiten
+node_modules/
+package-lock.json
+yarn.lock
+
+# System-Dateien
+.DS_Store
+Thumbs.db
+
+# Build- und Cache-Dateien
+dist/
+build/
+.cache/
+*.log
+
+# Umgebungsvariablen
+.env
+.env.local
+.env.development
+.env.production
