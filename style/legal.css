@@ -1,0 +1,44 @@
+.legal-content {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  line-height: 1.6;
+}
+
+.legal-content h1 {
+  color: #2c3e50;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.legal-content h2 {
+  color: #2c3e50;
+  margin: 2rem 0 1rem;
+  font-size: 1.5rem;
+}
+
+.legal-content section {
+  margin-bottom: 2rem;
+}
+
+.legal-content p {
+  margin: 0.5rem 0;
+  color: #666;
+}
+
+.legal-content ul {
+  margin: 1rem 0;
+  padding-left: 2rem;
+}
+
+.legal-content li {
+  margin: 0.5rem 0;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .legal-content {
+    padding: 1rem;
+    margin: 1rem;
+  }
+}

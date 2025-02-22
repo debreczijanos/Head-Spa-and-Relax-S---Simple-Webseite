@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="d6d5720d-9ec8-45a8-9dc4-e7720ae732d1"
+        data-blockingmode="auto" type="text/javascript"></script>
+
+    <title>Head Spa & Relax</title>
+
+    <link rel="stylesheet" href="./style/assets.css">
+    <link rel="stylesheet" href="./style/fonts.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="./JS/contact.js" defer></script>
+    <script src="./JS/nav.js" defer></script>
+
+</head>
+
+<body>
+    <div class="social-float">
+        <a href="https://facebook.com/headsparelax" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/head_spa_ulm?igsh=MXI2OWJmdGpib2kwNg==" target="_blank"><i
+                class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/+491234567890" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    <div class="background">
+        <header>
+            <div class="logo">
+                <img src="./img/logo.jpg" alt="logo">
+            </div>
+            <button class="nav-toggle" aria-label="Toggle Navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./html/about.html">Über uns</a></li>
+                    <li><a href="./html/leistungen.html">Leistungen</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="home">
+            <div class="home">
+                <h1>Head Spa & Relax</h1>
+                <h2>Ihre Oase der Entspannung</h2>
+                <p class="home-description">Entdecken Sie pure Entspannung und Wohlbefinden in unserem exklusiven
+                    Spa-Salon</p>
+                <a href="./html/leistungen.html" class="cta-button">Unsere Leistungen</a>
+            </div>
+        </section>
+    </div>
+
+    <section class="about">
+        <p>Bei Head Spa & Relax massage glauben wir an Schönheit und Beratung, um Ihre persönliche Note zu entfalten.
+            Unser Ziel ist es, Ihnen Ruhe zu bieten, in der Sie sich entspannen und sicher sein können, dass Ihr Wohl in
+            unseren Händen liegt. </p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 class="section-title">Kontaktieren Sie uns</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Unsere Adresse</h3>
+                <p>Zinglerstrasse 49/1</p>
+                <p>89077 Ulm</p>
+                <p>Tel: +491727103286</p>
+                <p>Email: info@headspas.de</p>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2649.2797532638865!2d9.979415676666074!3d48.39357053330441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4799669c55127a65%3A0xc27e5fa8fe1397e2!2sZinglerstra%C3%9Fe%2049%2F1%2C%2089077%20Ulm!5e0!3m2!1sde!2sde!4v1740176282162!5m2!1sde!2sde"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+            <form class="contact-form" id="contactForm" onsubmit="return handleSubmit(event)">
+                <input type="text" name="Name" id="name" placeholder="Ihr Name" required>
+                <input type="email" name="Email" id="userEmail" placeholder="Ihre E-Mail" required>
+                <input type="tel" name="Telefon" id="userPhone" placeholder="Ihre Telefonnummer" required>
+                <textarea name="Nachricht" id="userMessage" placeholder="Ihre Nachricht" required></textarea>
+                <button type="submit">Nachricht senden</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Modal für die Auswahl der Kontaktmethode -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Wie möchten Sie uns kontaktieren?</h2>
+            <div class="contact-options">
+                <button onclick="sendEmail()" class="contact-btn email-btn">
+                    <i class="fas fa-envelope"></i> Per E-Mail senden
+                </button>
+                <button onclick="sendWhatsApp()" class="contact-btn whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i> Per WhatsApp senden
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Über uns</h4>
+                <p>Head Spa & Relax - Ihr Experte für Entspannung und Wohlbefinden. Wir bieten professionelle Massage-
+                    und Spa-Behandlungen in entspannter Atmosphäre.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Öffnungszeiten</h4>
+                <p>Montag - Freitag: 9:00 - 20:00</p>
+                <p>Samstag: 10:00 - 18:00</p>
+                <p>Sonntag: Geschlossen</p>
+            </div>
+            <div class="footer-section">
+                <h4>Kontakt</h4>
+                <p>Tel: +491727103286</p>
+                <p>Email: info@headspas.de</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/head_spa_ulm?igsh=MXI2OWJmdGpib2kwNg=="><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Rechtliches</h4>
+                <ul class="legal-links">
+                    <li><a href="./html/impressum.html">Impressum</a></li>
+                    <li><a href="./html/datenschutz.html">Datenschutz</a></li>
+                    <li><a href="./html/agb.html">AGB</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-nav">
+                <a href="./html/impressum.html">Impressum</a>
+                <span>|</span>
+                <a href="./html/datenschutz.html">Datenschutz</a>
+                <span>|</span>
+                <a href="./html/agb.html">AGB</a>
+            </div>
+            <p>&copy; 2024 Head Spa & Relax. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

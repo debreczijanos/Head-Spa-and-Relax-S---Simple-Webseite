@@ -1,0 +1,23 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background-color: #f6f7f8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+}
