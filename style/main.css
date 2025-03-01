@@ -545,6 +545,54 @@ button[type="submit"]:disabled {
   transition: all 0.3s ease;
 }
 
+/* Standard Checkbox Styling */
+.checkbox-options input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #2ecc71; /* Grüner Rand */
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Wenn die Checkbox ausgewählt ist */
+.checkbox-options input[type="checkbox"]:checked {
+  background-color: #2ecc71; /* Grünes Kästchen */
+  border-color: #27ae60;
+}
+
+/* Optional: Ein Häkchen-Symbol */
+.checkbox-options input[type="checkbox"]::after {
+  content: "✓";
+  font-size: 16px;
+  color: white;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  visibility: hidden;
+}
+
+.checkbox-options input[type="checkbox"]:checked::after {
+  visibility: visible;
+}
+
+.checkbox-options > label {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  text-align: center;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #2c3e50;
+  font-weight: 600;
+  margin-top: 0.2rem;
+  padding: 0.6rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
 /* Booking Button */
 .book-btn {
   display: block;
@@ -563,6 +611,12 @@ button[type="submit"]:disabled {
 .book-btn:hover {
   background-color: #27ae60;
   transform: translateY(-2px);
+}
+.book-btn:disabled {
+  background-color: #ccc; /* Grau, wenn disabled */
+  color: #888; /* Textfarbe ändern */
+  cursor: not-allowed; /* Cursor auf "nicht erlaubt" setzen */
+  opacity: 0.6; /* Leicht transparent machen */
 }
 
 /* Modal Styles */

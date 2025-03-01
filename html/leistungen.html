@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../img/logo.jpg">
+
     <title>Head Spa and Massage Leistungen</title>
 
     <link rel="stylesheet" href="../style/assets.css">
@@ -157,29 +159,50 @@
                 </button>
             </div>
 
-            <div class="service-card">
+            <div class="service-card scratching-service-card">
                 <span>Scratching therapy (ASMR) - Kraulmassage</span>
                 <ul>
                     <li>Nach Wunsch geht auch längerer Buchzeit. Preise hängen dann dementsprechend von Zeit ab!</li>
                 </ul>
-                <p>Dauer 30 min - 40€ oder 60 min - 70€</p>
-                <button class="book-btn"
-                    onclick="openModal('Scratching therapy (ASMR) - Kraulmassage - Für Frauen und Männer', '30 min', '40€', 'oder', '60 min', '70€')">
+
+                <div class="checkbox-options">
+                    <label>
+                        <input type="checkbox" name="scratching-massage" value="30 min - 40€">
+                        30 min - 40€
+                    </label>
+                    <label>
+                        <input type="checkbox" name="scratching-massage" value="60 min - 70€">
+                        60 min - 70€
+                    </label>
+                </div>
+
+                <button class="book-btn" id="scratchingBookBtn" disabled>
                     Termin vereinbaren
                 </button>
             </div>
 
-            <div class="service-card">
+            <div class="service-card relax-massage-service-card">
                 <span>Relax Massage ganze Körper</span>
                 <ul>
-                    <li>60 min - 65€</li>
-                    <li>90 min - 95€</li>
-                    <li>120 min - 110€</li>
+                    <li>Dauer / Preis je nach Buchung</li>
                 </ul>
-                <p>Dauer / Preis je nach buchung</p>
-                <button class="book-btn" onclick="openModal('Relax Massage ganze Körper', '60 min', '65€')">
-                    Termin vereinbaren
-                </button>
+
+                <div class="checkbox-options">
+                    <label>
+                        <input type="checkbox" name="relax-massage" value="60 min - 65€">
+                        60 min - 65€
+                    </label>
+                    <label>
+                        <input type="checkbox" name="relax-massage" value="90 min - 95€">
+                        90 min - 95€
+                    </label>
+                    <label>
+                        <input type="checkbox" name="relax-massage" value="120 min - 110€">
+                        120 min - 110€
+                    </label>
+                </div>
+
+                <button class="book-btn" id="relaxBookBtn" disabled> Termin vereinbaren </button>
             </div>
 
         </div>
@@ -223,27 +246,50 @@
                 </button>
             </div>
 
-            <div class="service-card">
+            <div class="service-card scratching-service-card">
                 <span>Scratching therapy (ASMR) - Kraulmassage</span>
                 <ul>
                     <li>Nach Wunsch geht auch längerer Buchzeit. Preise hängen dann dementsprechend von Zeit ab!</li>
                 </ul>
-                <p>Dauer 30 min - 40€ oder 60 min - 70€</p>
-                <button class="book-btn"
-                    onclick="openModal('Scratching therapy (ASMR) - Kraulmassage - Für Frauen und Männer', '30 min', '40€', 'oder', '60 min', '70€')">
+
+                <div class="checkbox-options">
+                    <label>
+                        <input type="checkbox" name="scratching-massage" value="30 min - 40€">
+                        30 min - 40€
+                    </label>
+                    <label>
+                        <input type="checkbox" name="scratching-massage" value="60 min - 70€">
+                        60 min - 70€
+                    </label>
+                </div>
+
+                <button class="book-btn" id="scratchingBookBtn" disabled>
                     Termin vereinbaren
                 </button>
             </div>
 
-            <div class="service-card">
+            <div class="service-card relax-massage-service-card">
                 <span>Relax Massage ganze Körper</span>
                 <ul>
-                    <li>60 min - 65€</li>
-                    <li>90 min - 95€</li>
-                    <li>120 min - 110€</li>
+                    <li>Dauer / Preis je nach Buchung</li>
                 </ul>
-                <p>Dauer / Preis je nach buchung</p>
-                <button class="book-btn" onclick="openModal('Relax Massage ganze Körper', '60 min', '65€')">
+
+                <div class="checkbox-options">
+                    <label>
+                        <input type="checkbox" name="relax-massage" value="60 min - 65€">
+                        60 min - 65€
+                    </label>
+                    <label>
+                        <input type="checkbox" name="relax-massage" value="90 min - 95€">
+                        90 min - 95€
+                    </label>
+                    <label>
+                        <input type="checkbox" name="relax-massage" value="120 min - 110€">
+                        120 min - 110€
+                    </label>
+                </div>
+
+                <button class="book-btn" id="relaxBookBtn" disabled>
                     Termin vereinbaren
                 </button>
             </div>
@@ -296,10 +342,10 @@
                 <p>Tel: +491727103286</p>
                 <p>Email: info@headspas.de</p>
                 <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/head_spa_ulm?igsh=MXI2OWJmdGpib2kwNg=="><i
+                    <a href="https://facebook.com/headsparelax" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/head_spa_ulm?igsh=MXI2OWJmdGpib2kwNg==" target="_blank"><i
                             class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="https://wa.me/+491727103286" target="_blank"><i class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
             <div class="footer-section">

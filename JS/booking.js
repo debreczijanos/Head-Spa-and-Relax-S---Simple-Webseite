@@ -102,3 +102,46 @@ document.addEventListener("DOMContentLoaded", function () {
     emailForm.addEventListener("submit", sendEmail);
   }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Funktion zur Checkbox-Steuerung für eine Service-Card
+  function setupCheckboxes(serviceCardSelector, buttonId) {
+    const checkboxes = document.querySelectorAll(
+      `${serviceCardSelector} input[type="checkbox"]`
+    );
+    const bookBtn = document.getElementById(buttonId);
+
+    checkboxes.forEach((checkbox) => {
+      checkbox.addEventListener("change", function () {
+        // Deaktiviert alle anderen Checkboxen innerhalb der gleichen Service-Card
+        checkboxes.forEach((cb) => {
+          if (cb !== checkbox) {
+            cb.checked = false;
+          }
+        });
+
+        // Aktiviert den Button nur, wenn eine Auswahl getroffen wurde
+        if (checkbox.checked) {
+          bookBtn.disabled = false;
+          const selectedValue = checkbox.value.split(" - "); // Trennt Dauer und Preis
+
+          bookBtn.onclick = function () {
+            openModal(
+              serviceCardSelector.includes("scratching")
+                ? "Scratching therapy (ASMR) - Kraulmassage"
+                : "Relax Massage ganze Körper",
+              selectedValue[0],
+              selectedValue[1]
+            );
+          };
+        } else {
+          bookBtn.disabled = true;
+        }
+      });
+    });
+  }
+
+  // Setze Checkbox-Funktion für beide Service-Cards
+  setupCheckboxes(".scratching-service-card", "scratchingBookBtn");
+  setupCheckboxes(".relax-massage-service-card", "relaxBookBtn");
+});
