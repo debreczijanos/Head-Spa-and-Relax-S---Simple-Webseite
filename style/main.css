@@ -27,11 +27,6 @@ header {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-.logo img {
-  height: 60px;
-  border-radius: 50%;
-}
-
 /* Basis Navigation Styles */
 .nav-toggle {
   display: none; /* Versteckt den Button standardmäßig */
@@ -60,6 +55,11 @@ nav a:hover {
   color: #2ecc71;
 }
 
+@media (max-height: 850px) {
+  .background {
+    margin-bottom: 3rem;
+  }
+}
 /* Mobile Navigation */
 @media (max-width: 768px) {
   .nav-toggle {
